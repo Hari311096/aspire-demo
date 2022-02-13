@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, Switch } from 'react-native';
+import { View, Text, Image, Switch, Platform } from 'react-native';
 import { commonStyles } from '../../config/commonStyles';
 import logo from '../../assets/images/logo.png';
 import styles from './styles';
@@ -14,7 +14,7 @@ export default function ListComp(props) {
     listIcon = logo, listIconStyle, mainWrapStyle, isSwitchVisible,
     switchStyle, title = 'Title', subTitle = 'Sub title', onSwitchValueChange, isSwitchOn
   } = props;
-
+  const scale = Platform.OS === 'ios' ? 0.7 : 1
   return (
     <View style={[commonStyles.row, styles.listWrap, mainWrapStyle]}>
       <Image resizeMode="contain" source={listIcon} style={styles.imageStyle, listIconStyle} />
@@ -25,7 +25,7 @@ export default function ListComp(props) {
       {isSwitchVisible && (
         <Switch
           trackColor={{ false: "#EEEEEE", true: colors.secondary }}
-          style={[{ transform: [{ scaleX: .7 }, { scaleY: .7 }] }, switchStyle]}
+          style={[{ transform: [{ scaleX: scale }, { scaleY: scale }] }, switchStyle]}
           onValueChange={onSwitchValueChange}
           value={isSwitchOn}
           ios_backgroundColor='#EEEEEE'

@@ -5,7 +5,6 @@ import { FontFamily } from '../../config/commonStyles';
 const styles = StyleSheet.create({
   mainWrap: {},
   cardContentWrap: {
-    // height: 220,
     width: '100%',
     backgroundColor: colors.secondary,
     padding: 20,
@@ -48,7 +47,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 8,
     padding: 10,
-    // paddingBottom: 5,
     position: 'absolute',
     top: -112,
     right: 2,
