@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "debug": "cd android && ./gradlew clean && ./gradlew assembledebug && cd ..",
+    "release": "cd android && ./gradlew clean && ./gradlew assemblerelease && cd .."
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.16.1",
@@ -17,8 +19,10 @@
     "react": "17.0.2",
     "react-native": "0.67.2",
     "react-native-device-info": "^8.4.9",
+    "react-native-progress": "^5.0.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.11.1",
+    "react-native-svg": "^12.1.1",
     "react-redux": "^7.2.6",
     "redux": "^4.1.2",
     "redux-persist": "^6.0.0",
