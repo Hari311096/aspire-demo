@@ -7,6 +7,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Tabs from './Tabs/BottomTabs'
 import { commonStyles } from '../config/commonStyles';
+import CardLimit from '../screens/CardLimit';
 
 function App() {
   const Stack = createNativeStackNavigator();
@@ -15,8 +16,9 @@ function App() {
     <NavigationContainer>
       <SafeAreaProvider>
         <View style={commonStyles.mainWrap}>
-          <Stack.Navigator initialRouteName="MainScreen">
-            <Stack.Screen name="MainScreen" component={Tabs} options={{ gestureEnabled: false, headerShown: false }} />
+          <Stack.Navigator initialRouteName="MainScreen" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="MainScreen" component={Tabs} options={{ headerShown: false }} />
+            <Stack.Screen name="CardLimit" component={CardLimit} options={{ headerShown: false }} />
           </Stack.Navigator>
         </View>
       </SafeAreaProvider>
