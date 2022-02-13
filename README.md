@@ -24,9 +24,9 @@ $ cd ..
 
 Run the application
 ```
-$ react-native start
 For iOS: $ react-native run-ios
 For Android: $ react-native run-android
+$ react-native start
 
 ```
 
@@ -36,6 +36,6 @@ For Android: $ react-native run-android
 ```
 $ rm -rf node_modules/
 $ yarn cache clean  & yarn install
-$ react-native start --reset-cache
+$ react-native start -- --reset-cache
 $ react-native run-ios
 ```
