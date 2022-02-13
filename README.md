@@ -1,4 +1,4 @@
-# aspire-demo
+# Aspire Assignment
 
 ## Initial Install
 Install Prerequisites:
