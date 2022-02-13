@@ -25,6 +25,7 @@ export default function ListComp(props) {
       {isSwitchVisible && (
         <Switch
           trackColor={{ false: "#EEEEEE", true: colors.secondary }}
+          thumbColor={colors.white}
           style={[{ transform: [{ scaleX: scale }, { scaleY: scale }] }, switchStyle]}
           onValueChange={onSwitchValueChange}
           value={isSwitchOn}
