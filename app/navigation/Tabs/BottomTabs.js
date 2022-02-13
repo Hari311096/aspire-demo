@@ -6,10 +6,13 @@ import tab2 from '../../assets/images/tab2.png'
 import tab3 from '../../assets/images/tab3.png'
 import tab4 from '../../assets/images/tab4.png'
 import tab5 from '../../assets/images/tab5.png'
-import DebitCard from '../../screens/DebitCard';
 import colors from '../../config/colors';
 import { commonStyles } from '../../config/commonStyles';
 import DebitCardStacks from '../Stacks/DebitCardStacks';
+import Home from '../../screens/Home';
+import Payments from '../../screens/Payments';
+import Credit from '../../screens/Credit';
+import Profile from '../../screens/Profile';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +31,7 @@ export default function MyTabs() {
     >
       <Tab.Screen
         name="Home"
-        component={DebitCard}
+        component={Home}
         options={() => ({
           tabBarIcon: ({ focused, color }) => (
             <View style={commonStyles.center}>
@@ -50,7 +53,7 @@ export default function MyTabs() {
       />
       <Tab.Screen
         name="Payments"
-        component={DebitCard}
+        component={Payments}
         options={() => ({
           tabBarIcon: ({ focused, color }) => (
             <View style={commonStyles.center}>
@@ -61,7 +64,7 @@ export default function MyTabs() {
       />
       <Tab.Screen
         name="Credit"
-        component={DebitCard}
+        component={Credit}
         options={() => ({
           tabBarIcon: ({ focused, color }) => (
             <View style={commonStyles.center}>
@@ -72,7 +75,7 @@ export default function MyTabs() {
       />
       <Tab.Screen
         name="Profile"
-        component={DebitCard}
+        component={Profile}
         options={() => ({
           tabBarIcon: ({ focused, color }) => (
             <View style={commonStyles.center}>
