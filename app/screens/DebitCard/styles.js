@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import colors from '../../config/colors'
-import { FontFamily } from '../../config/commonStyles';
+import { commonStyles, FontFamily } from '../../config/commonStyles';
 import { isIphoneX } from '../../config/constants';
 
 const styles = StyleSheet.create({
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
   },
   cardDetails: {
     padding: 20,
-    paddingTop: isIphoneX ? 40 : 20,
+    paddingTop: isIphoneX ? 40 : 30,
     flex: 1,
     backgroundColor: colors.primary,
     position: 'absolute',
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
   scrollWrap: {
     flex: 1,
     paddingTop: 250,
-    borderTopLeftRadius: 25,
-    borderTopRightRadius: 25,
+    borderTopLeftRadius: 30,
+    borderTopRightRadius: 30,
   },
   contentWrap: {
     flex: 1,
@@ -72,6 +72,20 @@ const styles = StyleSheet.create({
   balanceWrap: {
     paddingTop: 10,
     justifyContent: 'flex-start'
+  },
+  priceLimitHeaderWrap: {
+    ...commonStyles.row,
+    paddingBottom: 7
+  },
+  priceLimitHeader: {
+    fontFamily: FontFamily.medium,
+    color: '#222',
+    fontSize: 13,
+    lineHeight: 18
+  },
+  priceLimit: {
+    fontFamily: FontFamily.demiBold,
+    color: colors.secondary,
   }
 });
 
