@@ -43,6 +43,13 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AvenirNext-Bold.otf</string>
+		<string>AvenirNext-Medium.otf</string>
+		<string>AvenirNext-DemiBold.ttf</string>
+		<string>AvenirNext-Regular.otf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
