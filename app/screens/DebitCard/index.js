@@ -55,7 +55,6 @@ export default function DebitCard({ navigation }) {
   useEffect(() => {
     if (cardLimit !== null && parseFloat(cardLimit.replace(/,/g, '')) > 0) {
       const updatedProgress = 345 / parseFloat(cardLimit.replace(/,/g, ''));
-      console.log('useEffect :: updatedProgress', updatedProgress)
       setState((p) => ({ ...p, switchVal: 2, progress: updatedProgress  }));
     }
   }, [cardLimit])
