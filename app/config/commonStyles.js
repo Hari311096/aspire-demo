@@ -1,5 +1,12 @@
 import { StyleSheet } from 'react-native';
 
+export const FontFamily = {
+  bold: 'AvenirNext-Bold',
+  demiBold: 'AvenirNext-DemiBold',
+  medium: 'AvenirNext-Medium',
+  regular: 'AvenirNext-Regular',
+};
+
 // Define all common styles of app here
 export const commonStyles = StyleSheet.create({
   mainWrap: {
